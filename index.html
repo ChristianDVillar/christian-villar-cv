@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian David Villar Colodro | Full-Stack Portfolio</title>
+  <meta name="description" content="Bilingual portfolio of Christian David Villar Colodro, Full-Stack Developer with 15+ years of experience." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <main class="container" id="cv-content">
+    <header>
+      <div class="header-controls">
+        <div class="controls-group">
+          <div class="lang-toggle" role="group" aria-label="Language selector">
+            <button onclick="setLang('es')" id="btn-es" aria-pressed="true">ES</button>
+            <button onclick="setLang('en')" id="btn-en" aria-pressed="false">EN</button>
+          </div>
+          <button onclick="toggleTheme()" id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon">🌙</span>
+          </button>
+        </div>
+        <button onclick="downloadPDF()" class="btn-primary" id="download-btn">
+          📄 <span data-es="Descargar PDF" data-en="Download PDF"></span>
+        </button>
+      </div>
+      <h1>Christian David Villar Colodro</h1>
+      <p class="subtitle" data-es="Full-Stack Developer · Málaga, España" data-en="Full-Stack Developer · Málaga, Spain"></p>
+      <p class="intro-text" data-es="Soy un Full-Stack Developer con experiencia sólida en JavaScript, React, Bootstrap, Python, Flask y SQL. Después de años de experiencia en soporte técnico, ahora me enfoco en desarrollo web. Mi pasión es crear soluciones completas y funcionales que mejoren la experiencia del usuario y optimicen procesos." 
+         data-en="I am a Full-Stack Developer with solid experience in JavaScript, React, Bootstrap, Python, Flask, and SQL. After years of experience in technical support, I am now focusing on web development. My passion is creating comprehensive and functional solutions that enhance the user experience and optimise processes."></p>
+      <div class="contact-info">
+        <a href="https://github.com/ChristianDVillar" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <span>🔗</span> GitHub
+        </a>
+        <a href="mailto:christiandvillar@gmail.com" aria-label="Email">
+          <span>✉️</span> christiandvillar@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/christian-david-villar-colodro" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <span>💼</span> LinkedIn
+        </a>
+      </div>
+    </header>
+
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading" data-es="Experiencia Profesional" data-en="Professional Experience"></h2>
+      <div class="card">
+        <div class="experience-item">
+          <h4 data-es="Help Desk / Full-Stack Developer" data-en="Help Desk / Full-Stack Developer"></h4>
+          <p class="meta" data-es="2008 - 2023 · Argentina" data-en="2008 - 2023 · Argentina"></p>
+          <ul>
+            <li data-es="Desarrollo y migración de aplicaciones de gestión de stock, optimizando procesos logísticos" data-en="Development and migration of stock management applications, optimizing logistical processes"></li>
+            <li data-es="Integración de funcionalidades (creación e impresión de reportes)" data-en="Integration of functionalities (report creation and printing)"></li>
+            <li data-es="Soporte técnico, instalación y mantenimiento de hardware/software" data-en="Technical support, hardware/software installation and maintenance"></li>
+            <li data-es="Clonación de equipos y gestión de redes mediante configuración de políticas y perfiles en controlador de dominio" data-en="Equipment cloning and network management through policy configuration and profile management on domain controller"></li>
+            <li data-es="Garantía de seguridad y eficiencia operativa" data-en="Ensuring security and operational efficiency"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading" data-es="Proyectos" data-en="Projects"></h2>
+      <div class="grid">
+        <article class="card project">
+          <h3 data-es="Gestión de Stock" data-en="Stock Management"></h3>
+          <p class="meta" data-es="2024 - Presente" data-en="2024 - Present"></p>
+          <p data-es="Desarrollo de una aplicación de gestión de stock con JavaScript, React y Bootstrap. Sistema completo para control de inventario y optimización de procesos logísticos." 
+             data-en="Development of a stock management application with JavaScript, React and Bootstrap. Complete system for inventory control and logistics process optimization."></p>
+          <div class="tags" role="list">
+            <span class="tag" role="listitem">JavaScript</span>
+            <span class="tag" role="listitem">React</span>
+            <span class="tag" role="listitem">Bootstrap</span>
+          </div>
+        </article>
+        <article class="card project">
+          <h3>Dumplings – Menu App</h3>
+          <p data-es="Aplicación móvil para camareros con búsqueda rápida y backend propio. Optimizada para uso en restaurantes con alta carga de trabajo." 
+             data-en="Mobile app for waiters with fast search and custom backend. Optimized for restaurant use with high workload."></p>
+          <div class="tags" role="list">
+            <span class="tag" role="listitem">React Native</span>
+            <span class="tag" role="listitem">Expo</span>
+            <span class="tag" role="listitem">Node</span>
+            <span class="tag" role="listitem">PostgreSQL</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading" data-es="Habilidades" data-en="Skills"></h2>
+      <div class="card">
+        <p data-es="Tecnologías y herramientas con las que trabajo en desarrollo frontend, backend y DevOps." 
+           data-en="Technologies and tools I work with in frontend, backend and DevOps development."></p>
+        <div class="tags" role="list">
+          <span class="tag" role="listitem">PHP</span>
+          <span class="tag" role="listitem">JavaScript</span>
+          <span class="tag" role="listitem">React</span>
+          <span class="tag" role="listitem">Bootstrap</span>
+          <span class="tag" role="listitem">Python</span>
+          <span class="tag" role="listitem">Django</span>
+          <span class="tag" role="listitem">Flask</span>
+          <span class="tag" role="listitem">SQL</span>
+          <span class="tag" role="listitem">Docker</span>
+          <span class="tag" role="listitem">Kubernetes</span>
+          <span class="tag" role="listitem">Jenkins</span>
+          <span class="tag" role="listitem">Linux</span>
+          <span class="tag" role="listitem">Azure</span>
+          <span class="tag" role="listitem">Google Cloud</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading" data-es="Educación" data-en="Education"></h2>
+      <div class="card">
+        <div class="experience-item">
+          <h4 data-es="Full Stack Developer" data-en="Full Stack Developer"></h4>
+          <p class="meta" data-es="2024 · 4geeks Academy, España" data-en="2024 · 4geeks Academy, Spain"></p>
+        </div>
+        <div class="experience-item">
+          <h4 data-es="Formación como Analista de Sistemas" data-en="Training for Systems Analyst"></h4>
+          <p class="meta" data-es="2016 · Instituto Superior Nuestra Señora de las Nieves, Buenos Aires, Argentina" data-en="2016 · Instituto Superior Nuestra Señora de las Nieves, Buenos Aires, Argentina"></p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="languages-heading">
+      <h2 id="languages-heading" data-es="Idiomas" data-en="Languages"></h2>
+      <div class="card">
+        <div class="tags" role="list">
+          <span class="tag" role="listitem">🇪🇸 <span data-es="Español (Nativo)" data-en="Spanish (Native)"></span></span>
+          <span class="tag" role="listitem">🇬🇧 <span data-es="Inglés" data-en="English"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Christian David Villar Colodro · Portfolio</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
