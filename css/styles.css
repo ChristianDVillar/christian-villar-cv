@@ -24,6 +24,7 @@
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +35,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
   background: linear-gradient(180deg, var(--gradient-start), var(--bg));
+  background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
@@ -77,9 +79,34 @@ header {
   margin-bottom: 3rem;
 }
 
+.header-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 8px 24px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.header-text {
+  flex: 1;
+}
+
 .header-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
@@ -121,6 +148,7 @@ h3 {
 
 .card {
   background: radial-gradient(1200px 600px at -10% -20%, var(--gradient-start), var(--card));
+  background-color: var(--card);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1.5rem;
@@ -188,18 +216,6 @@ button.active {
   color: var(--bg);
 }
 
-.btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--bg);
-  font-weight: 600;
-}
-
-.btn-primary:hover {
-  background: var(--accent-hover);
-  border-color: var(--accent-hover);
-  color: var(--bg);
-}
 
 .lang-toggle button {
   padding: 0.4rem 0.9rem;

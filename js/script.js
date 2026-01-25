@@ -28,19 +28,6 @@ function toggleTheme() {
   document.getElementById('theme-icon').textContent = currentTheme === 'dark' ? '🌙' : '☀️';
 }
 
-function downloadPDF() {
-  const element = document.getElementById('cv-content');
-  const opt = {
-    margin: [10, 10, 10, 10],
-    filename: `CV_Christian_Villar_${currentLang}.pdf`,
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2, useCORS: true },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-  
-  html2pdf().set(opt).from(element).save();
-}
-
 // Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.setAttribute('data-theme', currentTheme);

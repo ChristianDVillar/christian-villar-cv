@@ -1,6 +1,6 @@
 # Christian Villar - CV Portfolio
 
-Portfolio web bilingüe (ES/EN) con tema claro/oscuro y descarga PDF.
+Portfolio web bilingüe (ES/EN) con tema claro/oscuro.
 
 ## 📁 Estructura del Proyecto
 
@@ -11,6 +11,9 @@ christian-villar-cv/
 │   └── styles.css      # Estilos CSS
 ├── js/
 │   └── script.js       # Lógica JavaScript
+├── assets/
+│   └── images/
+│       └── profile.jpg  # Imagen de perfil
 ├── server.py           # Servidor local Python
 ├── start.bat           # Script de inicio rápido (Windows)
 └── README.md           # Este archivo
@@ -50,7 +53,6 @@ Simplemente abre `index.html` en tu navegador (algunas funciones pueden no funci
 
 - ✅ Bilingüe (ES/EN) con persistencia
 - ✅ Tema claro/oscuro con toggle
-- ✅ Descarga PDF del CV
 - ✅ Diseño responsive
 - ✅ Animaciones suaves
 - ✅ Optimizado para recruiters
@@ -90,5 +92,4 @@ Edita `css/styles.css` y modifica:
 ### Funcionalidad
 Edita `js/script.js` para:
 - Modificar el comportamiento del cambio de idioma
-- Ajustar la generación de PDF
 - Añadir nuevas funcionalidades
