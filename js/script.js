@@ -12,16 +12,21 @@ function setLang(lang) {
   });
   
   document.documentElement.lang = lang;
-  
-  // Update button states
-  document.getElementById('btn-es').setAttribute('aria-pressed', lang === 'es');
-  document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
-  document.getElementById('btn-es').classList.toggle('active', lang === 'es');
-  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+  const btnEs = document.getElementById('btn-es');
+  const btnEn = document.getElementById('btn-en');
+  if (btnEs) {
+    btnEs.setAttribute('aria-pressed', lang === 'es');
+    btnEs.classList.toggle('active', lang === 'es');
+  }
+  if (btnEn) {
+    btnEn.setAttribute('aria-pressed', lang === 'en');
+    btnEn.classList.toggle('active', lang === 'en');
+  }
 }
 
-// Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
   setLang(currentLang);
-  document.getElementById('year').textContent = new Date().getFullYear();
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
