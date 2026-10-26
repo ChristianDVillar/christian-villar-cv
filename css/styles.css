@@ -527,6 +527,10 @@ section[id] {
   font-weight: 600;
 }
 
+.print-only {
+  display: none !important;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -673,6 +677,28 @@ section[id] {
   .topbar,
   footer {
     display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .skill-continued {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .skills-continued-heading {
+    margin: 9pt 0 4pt;
+    padding: 0 0 1.5pt;
+    border-bottom: 0.8pt solid #003399;
+    color: #003399 !important;
+    font-size: 10.5pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    break-after: avoid;
+    page-break-after: avoid;
   }
 
   .container {
