@@ -10,3 +10,13 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Working drafts and source material (kept locally under _source/)
+_source/
+TEMP-*.md
+*.docx
+Posibles mejoras/
+
+# Generated / local print checks
+temp-*.pdf
+temp-*.png

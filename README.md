@@ -1,95 +1,57 @@
-# Christian Villar - CV Portfolio
+# Christian Villar — CV
 
-Portfolio web bilingüe (ES/EN) con tema claro/oscuro.
+CV web bilingüe (ES/EN) de especialista en operaciones IT y soporte N1/N2.
 
-## 📁 Estructura del Proyecto
+## Estructura
 
 ```
 christian-villar-cv/
-├── index.html          # Archivo principal HTML
-├── css/
-│   └── styles.css      # Estilos CSS
-├── js/
-│   └── script.js       # Lógica JavaScript
-├── assets/
-│   └── images/
-│       └── profile.jpg  # Imagen de perfil
-├── server.py           # Servidor local Python
-├── start.bat           # Script de inicio rápido (Windows)
-└── README.md           # Este archivo
+├── index.html          # CV completo (PDF: 2 hojas A4)
+├── index-short.html    # CV resumido (PDF: 1 hoja A4)
+├── css/styles.css
+├── js/script.js
+├── server.py           # servidor local opcional
+└── _source/            # borradores y material de trabajo (no publicado)
 ```
 
-## 🚀 Cómo ejecutarlo localmente
-
-### Opción 1: Python (más fácil)
-
-Si tienes Python instalado:
+## Cómo ejecutarlo
 
 ```bash
-# Python 3
 python -m http.server 8000
-
-# O Python 2
-python -m SimpleHTTPServer 8000
 ```
 
-Luego abre: http://localhost:8000
-
-### Opción 2: Node.js
-
-Si tienes Node.js instalado:
+O bien:
 
 ```bash
-npx http-server -p 8000
+python server.py
 ```
 
-Luego abre: http://localhost:8000
+Abre http://localhost:8000
 
-### Opción 3: Abrir directamente
+- Completo: http://localhost:8000/index.html
+- Resumido: http://localhost:8000/index-short.html
+- Inglés forzado: añade `?lang=en` (por ejemplo `index.html?lang=en`)
+- Español forzado: `?lang=es`
 
-Simplemente abre `index.html` en tu navegador (algunas funciones pueden no funcionar por CORS).
+Si la dirección no lleva `lang`, se usa el idioma guardado en el navegador. Un valor distinto de `es` o `en` (por ejemplo `?lang=fr`) deja la página en español.
 
-## ✨ Características
+## Imprimir / PDF
 
-- ✅ Bilingüe (ES/EN) con persistencia
-- ✅ Tema claro/oscuro con toggle
-- ✅ Diseño responsive
-- ✅ Animaciones suaves
-- ✅ Optimizado para recruiters
+1. Elige ES o EN (o abre con `?lang=`).
+2. **Descargar PDF** guarda el archivo ya exportado en `pdf/` según el idioma activo.
+3. **Imprimir / PDF** abre el diálogo del navegador. En Más opciones / More settings, desmarca **Encabezados y pies de página**.
 
-## 🌐 Desplegar gratis
+Archivos en `pdf/`:
 
-### GitHub Pages
+- `cv-completo-es.pdf` / `cv-completo-en.pdf` (2 hojas A4)
+- `cv-resumido-es.pdf` / `cv-resumido-en.pdf` (1 hoja A4)
 
-1. Crea un repo en GitHub: `christian-villar-cv`
-2. Sube este archivo `index.html`
-3. Ve a Settings → Pages
-4. Selecciona branch `main` y folder `/root`
-5. Tu CV estará en: `https://tuusuario.github.io/christian-villar-cv/`
+El resumido debe caber en **una hoja A4**. El completo, en **dos**.
 
-### Netlify
+## Características
 
-1. Ve a [netlify.com](https://www.netlify.com)
-2. Login con GitHub
-3. "Add new site" → "Deploy manually"
-4. Arrastra `index.html`
-5. ¡Listo! URL tipo: `https://awesome-name.netlify.app`
-
-## 📝 Personalizar
-
-### Contenido
-Edita `index.html` y cambia:
-- Información de contacto (email, LinkedIn)
-- Proyectos y experiencia
-- Habilidades
-
-### Estilos
-Edita `css/styles.css` y modifica:
-- Colores en las variables CSS `:root`
-- Tipografías y espaciados
-- Animaciones y transiciones
-
-### Funcionalidad
-Edita `js/script.js` para:
-- Modificar el comportamiento del cambio de idioma
-- Añadir nuevas funcionalidades
+- Bilingüe ES/EN, con prioridad de la URL sobre el idioma guardado
+- El enlace entre la versión completa y la resumida conserva el idioma y el resto de parámetros
+- Navegación por secciones
+- Diseño adaptable (móvil sin desplazamiento horizontal)
+- Impresión estilo europeo en blanco

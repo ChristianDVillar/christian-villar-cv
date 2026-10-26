@@ -14,7 +14,6 @@ PORT = 8000
 class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
-        self.send_header('Access-Control-Allow-Origin', '*')
         super().end_headers()
 
 def main():

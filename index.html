@@ -3,213 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christian David Villar Colodro | Full-Stack Developer · CV</title>
-  <meta name="description" content="CV y portfolio de Christian David Villar Colodro, Full-Stack Developer con 15+ años de experiencia. JavaScript, React, Node.js, Python, SaaS." />
+  <title>Christian David Villar Colodro | Técnico de operaciones IT</title>
+  <meta name="description" data-es="CV de Christian David Villar Colodro, técnico de operaciones IT y soporte N2 en Málaga. Windows, Active Directory, Microsoft 365 e infraestructura." data-en="CV of Christian David Villar Colodro, IT Operations Technician and L2 support in Málaga. Windows, Active Directory, Microsoft 365 and infrastructure." content="CV de Christian David Villar Colodro, técnico de operaciones IT y soporte N2 en Málaga. Windows, Active Directory, Microsoft 365 e infraestructura." />
   <meta name="theme-color" content="#0f172a" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="cv-page">
-  <a href="#cv-content" class="skip-link"><span data-es="Ir al contenido" data-en="Skip to content"></span></a>
-  <main class="container" id="cv-content" role="main">
-    <header class="cv-header" role="banner">
-      <div class="header-controls">
-        <div class="controls-group">
-          <div class="lang-toggle" role="group" aria-label="Language selector">
-            <button onclick="setLang('es')" id="btn-es" aria-pressed="true">ES</button>
-            <button onclick="setLang('en')" id="btn-en" aria-pressed="false">EN</button>
-          </div>
+<body class="cv-page" data-title-es="Christian David Villar Colodro | Técnico de operaciones IT" data-title-en="Christian David Villar Colodro | IT Operations Technician">
+  <a href="#cv-content" class="skip-link"><span data-es="Ir al contenido" data-en="Skip to content">Ir al contenido</span></a>
+
+  <div class="topbar no-print">
+    <nav class="section-nav" data-aria-es="Secciones del CV" data-aria-en="CV sections" aria-label="Secciones del CV">
+      <a href="#perfil" data-es="Perfil" data-en="Profile">Perfil</a>
+      <a href="#experiencia" data-es="Experiencia" data-en="Experience">Experiencia</a>
+      <a href="#competencias" data-es="Competencias" data-en="Skills">Competencias</a>
+      <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="#formacion" data-es="Formación" data-en="Education">Formación</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <div class="controls-group">
+      <div class="lang-toggle" role="group" data-aria-es="Selector de idioma" data-aria-en="Language selector" aria-label="Selector de idioma">
+        <button type="button" id="btn-es" aria-pressed="true">ES</button>
+        <button type="button" id="btn-en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="print-btn" data-es="Imprimir / PDF" data-en="Print / PDF">Imprimir / PDF</button>
+    </div>
+    <p class="print-hint" data-es="En el diálogo, abre Más opciones y desmarca Encabezados y pies de página." data-en="In the dialog, open More settings and turn off Headers and footers.">En el diálogo, abre Más opciones y desmarca Encabezados y pies de página.</p>
+  </div>
+
+  <main class="container" id="cv-content">
+    <header class="cv-header" id="perfil">
+      <p class="kicker" data-es="IT SUPPORT · SISTEMAS · AUTOMATIZACIÓN" data-en="IT SUPPORT · SYSTEMS · AUTOMATION">IT SUPPORT · SISTEMAS · AUTOMATIZACIÓN</p>
+      <div class="header-text">
+        <h1>Christian David Villar Colodro</h1>
+        <p class="subtitle" data-es="Especialista en operaciones IT y soporte" data-en="IT Operations &amp; Support Specialist">Especialista en operaciones IT y soporte</p>
+        <p class="subtitle-scope" data-es="Soporte N1/N2 · Sistemas e infraestructura" data-en="L1/L2 Support · Systems &amp; Infrastructure">Soporte N1/N2 · Sistemas e infraestructura</p>
+        <p class="tagline" data-es="Experiencia en IT. Visión de sistemas. Mentalidad de desarrollo." data-en="IT experience. A systems view. A builder's mindset.">Experiencia en IT. Visión de sistemas. Mentalidad de desarrollo.</p>
+      </div>
+      <p class="intro-text" data-es="Profesional de operaciones y soporte IT con más de 15 años de experiencia dando soporte a más de 2.000 usuarios en un entorno empresarial de varias sedes. Experiencia en administración de Windows, Active Directory, Microsoft 365, gestión de incidencias, diagnóstico de hardware y redes, y prestación de servicios IT. Capacidad demostrada para gestionar un alto volumen de incidencias, coordinar despliegues de infraestructura y contribuir a proyectos tecnológicos internos. Formación como Analista de Sistemas y en desarrollo Full Stack, con conocimientos de Python, SQL, JavaScript y APIs REST." data-en="IT Operations and Support professional with 15+ years of experience supporting 2,000+ users across a multi-site enterprise environment. Experienced in Windows administration, Active Directory, Microsoft 365, incident management, hardware and network troubleshooting, and IT service delivery. Proven ability to handle high incident volumes, coordinate infrastructure deployments, and contribute to internal technology projects. Complemented by Systems Analyst qualifications and Full Stack development training, with knowledge of Python, SQL, JavaScript, and REST APIs.">Profesional de operaciones y soporte IT con más de 15 años de experiencia dando soporte a más de 2.000 usuarios en un entorno empresarial de varias sedes. Experiencia en administración de Windows, Active Directory, Microsoft 365, gestión de incidencias, diagnóstico de hardware y redes, y prestación de servicios IT. Capacidad demostrada para gestionar un alto volumen de incidencias, coordinar despliegues de infraestructura y contribuir a proyectos tecnológicos internos. Formación como Analista de Sistemas y en desarrollo Full Stack, con conocimientos de Python, SQL, JavaScript y APIs REST.</p>
+      <div class="stats" data-aria-es="Cifras destacadas" data-aria-en="Key figures" aria-label="Cifras destacadas">
+        <div class="stat">
+          <strong>15+</strong>
+          <span data-es="años en soporte IT" data-en="years in IT support">años en soporte IT</span>
+        </div>
+        <div class="stat">
+          <strong data-es="2.000+" data-en="2,000+">2.000+</strong>
+          <span data-es="usuarios en varias sedes" data-en="users across multiple campuses">usuarios en varias sedes</span>
+        </div>
+        <div class="stat">
+          <strong>150–200</strong>
+          <span data-es="incidencias resueltas por semana" data-en="incidents resolved per week">incidencias resueltas por semana</span>
         </div>
       </div>
-      <div class="header-profile">
-        <img src="assets/images/profile.jpg" alt="Christian David Villar Colodro" class="profile-image" />
-        <div class="header-text">
-          <h1>Christian David Villar Colodro</h1>
-          <p class="subtitle" data-es="Full-Stack Developer · SaaS & Streaming Tools · Málaga, España" data-en="Full-Stack Developer · SaaS & Streaming Tools · Málaga, Spain"></p>
-        </div>
+      <div class="hero-actions no-print">
+        <a class="button-link download-cv" href="pdf/cv-completo-es.pdf" download data-pdf-es="pdf/cv-completo-es.pdf" data-pdf-en="pdf/cv-completo-en.pdf" data-es="Descargar PDF" data-en="Download PDF">Descargar PDF</a>
+        <button type="button" class="print-btn" data-es="Imprimir / PDF" data-en="Print / PDF">Imprimir / PDF</button>
+        <a class="button-link" href="#contacto" data-es="Contactar" data-en="Contact">Contactar</a>
+        <a href="https://www.linkedin.com/in/christian-david-villar-colodro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ChristianDVillar" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
-      <p class="intro-text" data-es="Full-Stack Developer con más de 15 años de experiencia en entornos IT y desarrollo de aplicaciones. Especializado en JavaScript, React, Node.js, Python y Flask, con foco reciente en aplicaciones SaaS orientadas a creadores de contenido y automatización de flujos. He liderado migraciones de aplicaciones críticas, desarrollado sistemas de gestión de stock y creado Streamer Scheduler, una plataforma para programar y gestionar contenido multicanal con pagos, OAuth y panel de administración. Busco aportar valor en equipos donde el desarrollo de producto, la experiencia de usuario y la estabilidad operativa van de la mano." 
-         data-en="Full-Stack Developer with 15+ years of experience in IT environments and application development. Specialized in JavaScript, React, Node.js, Python and Flask, with a recent focus on SaaS applications for content creators and workflow automation. I have led critical application migrations, built stock management systems and created Streamer Scheduler, a platform to schedule and manage multi-channel content with payments, OAuth and an admin panel. I aim to add value to teams where product development, user experience and operational stability go hand in hand."></p>
+      <p class="availability"><span data-es="Disponible de inmediato · Híbrido y presencial" data-en="Available immediately · Hybrid and on-site">Disponible de inmediato · Híbrido y presencial</span></p>
       <div class="contact-info">
-        <a href="https://github.com/ChristianDVillar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-        <a href="mailto:christiandvillar@gmail.com" aria-label="Email">christiandvillar@gmail.com</a>
-        <a href="https://linkedin.com/in/christian-david-villar-colodro" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <span data-es="Málaga, España" data-en="Málaga, Spain">Málaga, España</span>
+        <a href="tel:+34601755438">+34 601 75 54 38</a>
+        <a href="mailto:christiandvillar@gmail.com">christiandvillar@gmail.com</a>
+        <a href="https://www.linkedin.com/in/christian-david-villar-colodro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ChristianDVillar" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </header>
 
-    <section aria-labelledby="experience-heading">
-      <h2 id="experience-heading" data-es="Experiencia Profesional" data-en="Professional Experience"></h2>
-      
+    <section class="impact no-print" data-aria-es="Logros destacados" data-aria-en="Highlighted results" aria-label="Logros destacados">
+      <article>
+        <h3 data-es="Soporte a gran escala" data-en="Large-scale support">Soporte a gran escala</h3>
+        <p data-es="Más de 2.000 usuarios · 150–200 incidencias semanales · Soporte N1/N2" data-en="2,000+ users · 150–200 incidents a week · L1/L2 support">Más de 2.000 usuarios · 150–200 incidencias semanales · Soporte N1/N2</p>
+      </article>
+      <article>
+        <h3 data-es="Impresión distribuida" data-en="Distributed printing">Impresión distribuida</h3>
+        <p data-es="Despliegue en 7 sedes de la universidad." data-en="Deployment across 7 university campuses.">Despliegue en 7 sedes de la universidad.</p>
+      </article>
+      <article>
+        <h3 data-es="Herramientas internas" data-en="Internal tools">Herramientas internas</h3>
+        <p data-es="Aplicación de inventario desarrollada con Java y PHP." data-en="Inventory application built with Java and PHP.">Aplicación de inventario desarrollada con Java y PHP.</p>
+      </article>
+    </section>
+
+    <section id="experiencia" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" data-es="Experiencia profesional" data-en="Professional experience">Experiencia profesional</h2>
+
       <div class="card">
         <div class="experience-item">
-          <h4 data-es="Desarrollador de Aplicaciones" data-en="Application Developer"></h4>
-          <p class="meta" data-es="Pontificia Universidad Católica Argentina · nov. 2019 - oct. 2023" data-en="Pontificia Universidad Católica Argentina · Nov. 2019 - Oct. 2023"></p>
+          <h3 data-es="Técnico Senior de Soporte IT" data-en="Senior IT Support Technician">Técnico Senior de Soporte IT</h3>
+          <p class="meta" data-es="Pontificia Universidad Católica Argentina · Septiembre 2008 – Octubre 2023 · Varias sedes" data-en="Pontifical Catholic University of Argentina · September 2008 – October 2023 · Multi-campus">Pontificia Universidad Católica Argentina · Septiembre 2008 – Octubre 2023 · Varias sedes</p>
           <ul>
-            <li data-es="Diseño, desarrollo y migración de aplicaciones de gestión de stock utilizadas en entornos productivos, reduciendo errores operativos y tiempos de carga de trabajo manual." data-en="Designed, developed and migrated stock management applications used in production environments, reducing operational errors and manual workload time."></li>
-            <li data-es="Migración de aplicación crítica en PHP/Laravel, mejorando la mantenibilidad, estabilidad y capacidad de evolución de la plataforma." data-en="Migrated a critical PHP/Laravel application, improving maintainability, stability and the platform's ability to evolve."></li>
-            <li data-es="Desarrollo de sistema de stock en Java con generación de reportes e integración de impresión, utilizado diariamente por equipos operativos." data-en="Developed a Java-based stock system with report generation and printing integration, used daily by operational teams."></li>
-            <li data-es="Colaboración directa con equipos de desarrollo y usuarios clave para alinear las necesidades del negocio con las decisiones técnicas." data-en="Collaborated directly with development teams and key users to align business needs with technical decisions."></li>
+            <li data-es="Soporte de primer y segundo nivel a más de 2.000 usuarios en varias sedes de la universidad." data-en="Delivered first- and second-line IT support to 2,000+ users across multiple university campuses.">Soporte de primer y segundo nivel a más de 2.000 usuarios en varias sedes de la universidad.</li>
+            <li data-es="Resolución de 150–200 incidencias técnicas por semana mediante un sistema de tickets corporativo, priorizando el trabajo según las necesidades del servicio." data-en="Resolved 150–200 technical incidents per week through a corporate ticketing system, prioritizing work according to service needs.">Resolución de 150–200 incidencias técnicas por semana mediante un sistema de tickets corporativo, priorizando el trabajo según las necesidades del servicio.</li>
+            <li data-es="Administración de Active Directory, Microsoft 365, puestos Windows, accesos de usuario e impresoras de red." data-en="Managed Active Directory, Microsoft 365, Windows workstations, user access and network printers.">Administración de Active Directory, Microsoft 365, puestos Windows, accesos de usuario e impresoras de red.</li>
+            <li data-es="Diagnóstico y resolución de incidencias de hardware, software y red; soporte a la instalación, el despliegue y el mantenimiento de puestos de trabajo." data-en="Diagnosed and resolved hardware, software and network issues; supported workstation setup, deployment and ongoing maintenance.">Diagnóstico y resolución de incidencias de hardware, software y red; soporte a la instalación, el despliegue y el mantenimiento de puestos de trabajo.</li>
+            <li data-es="Soporte a laboratorios informáticos, eventos institucionales, videoconferencia y servicios de streaming, manteniendo la continuidad para los usuarios." data-en="Supported computer laboratories, institutional events, video conferencing and streaming services, helping maintain continuity for users.">Soporte a laboratorios informáticos, eventos institucionales, videoconferencia y servicios de streaming, manteniendo la continuidad para los usuarios.</li>
           </ul>
-          <div class="tags" role="list" style="margin-top: 1rem;">
-            <span class="tag" role="listitem">PHP</span>
-            <span class="tag" role="listitem">Laravel</span>
-            <span class="tag" role="listitem">Java</span>
-            <span class="tag" role="listitem">Active Directory</span>
-          </div>
+          <p class="block-label" data-es="Logros seleccionados" data-en="Selected achievements">Logros seleccionados</p>
+          <ul>
+            <li data-es="Lideré el despliegue de una solución de impresión distribuida en 7 sedes de la universidad." data-en="Led deployment of a distributed printing solution across 7 university campuses.">Lideré el despliegue de una solución de impresión distribuida en 7 sedes de la universidad.</li>
+            <li data-es="Desarrollé una aplicación interna de gestión de inventario con Java y PHP." data-en="Developed an internal inventory management application using Java and PHP.">Desarrollé una aplicación interna de gestión de inventario con Java y PHP.</li>
+          </ul>
         </div>
       </div>
 
       <div class="card">
         <div class="experience-item">
-          <h4 data-es="Técnico Senior TI · Líder Técnico" data-en="Senior IT Technician · Technical Lead"></h4>
-          <p class="meta" data-es="Pontificia Universidad Católica Argentina · sept. 2015 - oct. 2023" data-en="Pontificia Universidad Católica Argentina · Sept. 2015 - Oct. 2023"></p>
+          <h3 data-es="Atención al cliente" data-en="Customer Service">Atención al cliente</h3>
+          <p class="meta" data-es="Dumpling House, Málaga · Diciembre 2025 – Julio 2026" data-en="Dumpling House, Málaga · December 2025 – July 2026">Dumpling House, Málaga · Diciembre 2025 – Julio 2026</p>
           <ul>
-            <li data-es="Liderazgo técnico de infraestructura IT en múltiples sedes, garantizando alta disponibilidad y continuidad operativa para servicios clave." data-en="Provided technical leadership for IT infrastructure across multiple sites, ensuring high availability and operational continuity for key services."></li>
-            <li data-es="Gestión y mantenimiento de más de 90 impresoras en entornos distribuidos, reduciendo tiempos de inactividad y mejorando la experiencia de usuario final." data-en="Managed and maintained 90+ printers in distributed environments, reducing downtime and improving end-user experience."></li>
-            <li data-es="Automatización y estandarización de instalaciones mediante clonación de equipos, acelerando despliegues y reduciendo errores de configuración." data-en="Automated and standardized installations through device cloning, accelerating deployments and reducing configuration errors."></li>
-            <li data-es="Administración de Active Directory y políticas de dominio, garantizando seguridad, control de acceso y cumplimiento de estándares internos." data-en="Administered Active Directory and domain policies, ensuring security, access control and compliance with internal standards."></li>
-          </ul>
-          <div class="tags" role="list" style="margin-top: 1rem;">
-            <span class="tag" role="listitem">Windows 10</span>
-            <span class="tag" role="listitem">Active Directory</span>
-            <span class="tag" role="listitem">Clonezilla</span>
-            <span class="tag" role="listitem">Norton Ghost</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="experience-item">
-          <h4 data-es="Experiencia Inicial en Soporte Técnico" data-en="Early Career · Technical Support"></h4>
-          <p class="meta" data-es="Pontificia Universidad Católica Argentina · 2008 - 2015" data-en="Pontificia Universidad Católica Argentina · 2008 - 2015"></p>
-          <ul>
-            <li data-es="Soporte técnico a usuarios, docentes y alumnos, resolviendo incidencias de hardware, software y conectividad." data-en="Provided technical support to users, teachers and students, resolving hardware, software and connectivity issues."></li>
-            <li data-es="Mantenimiento de laboratorios informáticos y estaciones de trabajo, asegurando su disponibilidad para clases y exámenes." data-en="Maintained computer labs and workstations, ensuring their availability for classes and exams."></li>
+            <li data-es="Atención directa al cliente en un entorno de servicio de ritmo alto, reforzando la comunicación, la priorización y la resolución de problemas orientada al usuario." data-en="Worked directly with customers in a fast-paced service environment, strengthening communication, prioritization and customer-focused problem-solving skills.">Atención directa al cliente en un entorno de servicio de ritmo alto, reforzando la comunicación, la priorización y la resolución de problemas orientada al usuario.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading" data-es="Proyectos" data-en="Projects"></h2>
-      <div class="grid">
-        <article class="card project">
-          <h3>Streamer Scheduler</h3>
-          <p class="meta" data-es="2024 - 2026" data-en="2024 - 2026"></p>
-          <p data-es="Aplicación web tipo SaaS para creadores de contenido y streamers que permite programar publicaciones en múltiples plataformas (Twitch, X/Twitter, Instagram, Discord), gestionar contenido con calendario visual, integrar pagos con Stripe y autenticación OAuth (Google/Twitch) sobre una arquitectura full-stack moderna." 
-             data-en="SaaS web application for content creators and streamers to schedule posts across multiple platforms (Twitch, X/Twitter, Instagram, Discord), manage content with a visual calendar, integrate payments with Stripe and OAuth authentication (Google/Twitch) on a modern full-stack architecture."></p>
+    <section id="competencias" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" data-es="Competencias técnicas" data-en="Technical skills">Competencias técnicas</h2>
+      <div class="grid skills-grid">
+        <article class="card skill-group">
+          <h3 data-es="Soporte" data-en="Support">Soporte</h3>
           <div class="tags" role="list">
-            <span class="tag" role="listitem">React</span>
-            <span class="tag" role="listitem">Tailwind CSS</span>
-            <span class="tag" role="listitem">Node.js</span>
-            <span class="tag" role="listitem">Express</span>
-            <span class="tag" role="listitem">PostgreSQL</span>
-            <span class="tag" role="listitem">Supabase</span>
-            <span class="tag" role="listitem">Stripe</span>
-            <span class="tag" role="listitem">OAuth2</span>
-            <span class="tag" role="listitem">JWT</span>
+            <span class="tag" role="listitem"><span data-es="Soporte N1/N2" data-en="L1/L2 support">Soporte N1/N2</span></span>
+            <span class="tag" role="listitem"><span data-es="Triaje de incidencias" data-en="Incident triage">Triaje de incidencias</span></span>
+            <span class="tag" role="listitem"><span data-es="Gestión de tickets" data-en="Ticket management">Gestión de tickets</span></span>
+            <span class="tag" role="listitem"><span data-es="Troubleshooting" data-en="Technical troubleshooting">Troubleshooting</span></span>
+            <span class="tag" role="listitem"><span data-es="Soporte remoto" data-en="Remote support">Soporte remoto</span></span>
+            <span class="tag" role="listitem"><span data-es="Atención al usuario" data-en="User assistance">Atención al usuario</span></span>
+            <span class="tag" role="listitem"><span data-es="Priorización del servicio" data-en="Service prioritization">Priorización del servicio</span></span>
+            <span class="tag" role="listitem">TeamViewer</span>
+            <span class="tag" role="listitem">AnyDesk</span>
+            <span class="tag" role="listitem"><span data-es="Escritorio remoto (RDP)" data-en="Remote Desktop (RDP)">Escritorio remoto (RDP)</span></span>
           </div>
-          <p class="project-links">
-            <a href="https://github.com/ChristianDVillar/Stream-Schedule" class="project-link" target="_blank" rel="noopener noreferrer">🔗 <span data-es="Ver en GitHub" data-en="View on GitHub"></span></a>
-          </p>
         </article>
-        <article class="card project">
-          <h3 data-es="Gestión de Stock" data-en="Stock Management"></h3>
-          <p class="meta" data-es="2024 - Presente" data-en="2024 - Present"></p>
-          <p data-es="Sistema de gestión de stock con control de inventario, generación de reportes e impresión. Diseñado para optimizar procesos logísticos en entornos reales." 
-             data-en="Stock management system with inventory control, report generation and printing. Designed to optimize logistics processes in real-world environments."></p>
+        <article class="card skill-group">
+          <h3 data-es="Sistemas y redes" data-en="Systems &amp; networks">Sistemas y redes</h3>
           <div class="tags" role="list">
-            <span class="tag" role="listitem">Python</span>
+            <span class="tag" role="listitem">Windows 10/11</span>
+            <span class="tag" role="listitem">Windows Server</span>
+            <span class="tag" role="listitem">Microsoft 365</span>
+            <span class="tag" role="listitem">Active Directory</span>
+            <span class="tag" role="listitem">GPO</span>
+            <span class="tag" role="listitem">TCP/IP</span>
+            <span class="tag" role="listitem">DNS</span>
+            <span class="tag" role="listitem">DHCP</span>
+            <span class="tag" role="listitem">VPN</span>
+            <span class="tag" role="listitem"><span data-es="Linux (básico)" data-en="Linux (basic)">Linux (básico)</span></span>
+            <span class="tag" role="listitem"><span data-es="macOS (básico)" data-en="macOS (basic)">macOS (básico)</span></span>
+          </div>
+        </article>
+        <article class="card skill-group">
+          <h3 data-es="Despliegue y puesto de trabajo" data-en="Deployment &amp; workplace">Despliegue y puesto de trabajo</h3>
+          <div class="tags" role="list">
+            <span class="tag" role="listitem"><span data-es="Instalación de puestos" data-en="Workstation setup">Instalación de puestos</span></span>
+            <span class="tag" role="listitem"><span data-es="Hardware y periféricos" data-en="Hardware and peripherals">Hardware y periféricos</span></span>
+            <span class="tag" role="listitem"><span data-es="Impresoras de red" data-en="Network printers">Impresoras de red</span></span>
+            <span class="tag" role="listitem"><span data-es="Clonación (Ghost, Clonezilla)" data-en="Imaging (Ghost, Clonezilla)">Clonación (Ghost, Clonezilla)</span></span>
+            <span class="tag" role="listitem"><span data-es="Inventario" data-en="Inventory">Inventario</span></span>
+            <span class="tag" role="listitem"><span data-es="Videoconferencia y streaming" data-en="Video conferencing and streaming">Videoconferencia y streaming</span></span>
+          </div>
+        </article>
+        <article class="card skill-group">
+          <h3 data-es="Desarrollo y automatización" data-en="Development &amp; automation">Desarrollo y automatización</h3>
+          <div class="tags" role="list">
+            <span class="tag" role="listitem">Java</span>
+            <span class="tag" role="listitem">PHP</span>
             <span class="tag" role="listitem">JavaScript</span>
             <span class="tag" role="listitem">React</span>
+            <span class="tag" role="listitem">Python</span>
             <span class="tag" role="listitem">Flask</span>
+            <span class="tag" role="listitem">SQL</span>
+            <span class="tag" role="listitem"><span data-es="APIs REST" data-en="REST APIs">APIs REST</span></span>
+            <span class="tag" role="listitem">Git</span>
           </div>
-          <p class="project-links">
-            <a href="https://github.com/4GeeksAcademy/Silvia_Rodolfo_Christian" class="project-link" target="_blank" rel="noopener noreferrer">🔗 <span data-es="Ver en GitHub" data-en="View on GitHub"></span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" data-es="Proyectos tecnológicos" data-en="Selected technology projects">Proyectos tecnológicos</h2>
+      <div class="grid">
+        <article class="card project">
+          <h3>Dakinis Systems</h3>
+          <p class="project-status" data-es="En desarrollo · código público" data-en="In development · public code">En desarrollo · código público</p>
+          <p data-es="Orquestación de una plataforma multi-producto: Docker, gateway, bases de datos y documentación de arquitectura." data-en="Orchestration for a multi-product platform: Docker, gateway, databases and architecture documentation.">Orquestación de una plataforma multi-producto: Docker, gateway, bases de datos y documentación de arquitectura.</p>
+          <p class="project-tech">Docker, PostgreSQL, Redis, Gateway, Node.js</p>
+          <p class="project-actions no-print">
+            <a href="https://github.com/dakinissystems/dakinis-systems" target="_blank" rel="noopener noreferrer" data-es="Ver código" data-en="View code">Ver código</a>
+            <a href="https://www.dakinissystems.com" target="_blank" rel="noopener noreferrer" data-es="Ver web" data-en="View site">Ver web</a>
           </p>
         </article>
         <article class="card project">
-          <h3>Dumplings – Menu App</h3>
-          <p class="meta" data-es="App móvil · 2024" data-en="Mobile app · 2024"></p>
-          <p data-es="Aplicación móvil para camareros con búsqueda rápida y backend propio. Optimizada para uso en restaurantes con alta carga de trabajo." 
-             data-en="Mobile app for waiters with fast search and custom backend. Optimized for restaurant use with high workload."></p>
-          <div class="tags" role="list">
-            <span class="tag" role="listitem">React Native</span>
-            <span class="tag" role="listitem">Expo</span>
-            <span class="tag" role="listitem">Node.js</span>
-            <span class="tag" role="listitem">PostgreSQL</span>
-          </div>
-          <p class="project-links">
-            <a href="https://github.com/ChristianDVillar/Dumplings" class="project-link" target="_blank" rel="noopener noreferrer">🔗 <span data-es="Ver en GitHub" data-en="View on GitHub"></span></a>
+          <h3>Dakinis Core</h3>
+          <p class="project-status" data-es="En desarrollo · código público" data-en="In development · public code">En desarrollo · código público</p>
+          <p data-es="Aplicación modular de gestión empresarial (Dakinis One): clientes, operaciones e inventario." data-en="Modular business management app (Dakinis One): clients, operations and inventory.">Aplicación modular de gestión empresarial (Dakinis One): clientes, operaciones e inventario.</p>
+          <p class="project-tech">React, Vite, Node.js, Fastify, PostgreSQL, Redis</p>
+          <p class="project-actions no-print">
+            <a href="https://github.com/dakinissystems/dakinis-core" target="_blank" rel="noopener noreferrer" data-es="Ver código" data-en="View code">Ver código</a>
+            <a href="https://core.dakinissystems.com" target="_blank" rel="noopener noreferrer" data-es="Ver aplicación" data-en="View app">Ver aplicación</a>
           </p>
+        </article>
+        <article class="card project">
+          <h3>AkoeNet</h3>
+          <p class="project-status" data-es="En desarrollo · código público" data-en="In development · public code">En desarrollo · código público</p>
+          <p data-es="Cliente de una plataforma comunitaria con chat en tiempo real, escritorio (Tauri) y móvil." data-en="Client for a community platform with real-time chat, desktop (Tauri) and mobile.">Cliente de una plataforma comunitaria con chat en tiempo real, escritorio (Tauri) y móvil.</p>
+          <p class="project-tech">React, Vite, Socket.IO, Tauri, Capacitor</p>
+          <p class="project-actions no-print">
+            <a href="https://github.com/dakinissystems/akoenet-client" target="_blank" rel="noopener noreferrer" data-es="Ver código" data-en="View code">Ver código</a>
+            <a href="https://akoenet.dakinissystems.com" target="_blank" rel="noopener noreferrer" data-es="Ver aplicación" data-en="View app">Ver aplicación</a>
+          </p>
+        </article>
+        <article class="card project">
+          <h3>StreamAutomator</h3>
+          <p class="project-status" data-es="En desarrollo · código público" data-en="In development · public code">En desarrollo · código público</p>
+          <p data-es="Plataforma para programar emisiones, notificaciones y publicación en varias plataformas." data-en="Platform to schedule streams, notifications and multi-platform publishing.">Plataforma para programar emisiones, notificaciones y publicación en varias plataformas.</p>
+          <p class="project-tech">React, Vite, Node.js, Express, PostgreSQL, Redis, Socket.IO</p>
+          <p class="project-actions no-print">
+            <a href="https://github.com/dakinissystems/dakinis-streamautomator" target="_blank" rel="noopener noreferrer" data-es="Ver código" data-en="View code">Ver código</a>
+            <a href="https://streamautomator.com" target="_blank" rel="noopener noreferrer" data-es="Ver aplicación" data-en="View app">Ver aplicación</a>
+          </p>
+        </article>
+        <article class="card project">
+          <h3>LifeFlow Finance</h3>
+          <p class="project-status" data-es="Proyecto personal" data-en="Personal project">Proyecto personal</p>
+          <p data-es="Aplicación de finanzas personales y planificación del flujo de caja." data-en="Personal finance and cash-flow planning application.">Aplicación de finanzas personales y planificación del flujo de caja.</p>
+          <p class="project-tech">React, Vite, Node.js, Express, PostgreSQL, SQLite</p>
+        </article>
+        <article class="card project">
+          <h3>Dakinis Vault</h3>
+          <p class="project-status" data-es="Proyecto personal" data-en="Personal project">Proyecto personal</p>
+          <p data-es="Gestor de contraseñas local-first, con importación, auditoría y códigos TOTP." data-en="Local-first password manager with import, audit and TOTP codes.">Gestor de contraseñas local-first, con importación, auditoría y códigos TOTP.</p>
+          <p class="project-tech">TypeScript, React, Vite, IndexedDB, Web Crypto</p>
         </article>
       </div>
     </section>
 
-    <section aria-labelledby="skills-heading">
-      <h2 id="skills-heading" data-es="Habilidades" data-en="Skills"></h2>
+    <section id="formacion" aria-labelledby="education-heading">
+      <h2 id="education-heading" data-es="Formación y certificaciones" data-en="Education &amp; certifications">Formación y certificaciones</h2>
       <div class="card">
-        <p data-es="Stack tecnológico principal en desarrollo frontend, backend y DevOps, con foco en aplicaciones SaaS y herramientas para creadores de contenido." 
-           data-en="Core technology stack across frontend, backend and DevOps, focused on SaaS applications and tools for content creators."></p>
+        <div class="experience-item">
+          <h3 data-es="Desarrollador de software Full Stack" data-en="Full Stack Software Developer">Desarrollador de software Full Stack</h3>
+          <p class="meta" data-es="4Geeks Academy, España · 2024 · 360 horas" data-en="4Geeks Academy, Spain · 2024 · 360 hours">4Geeks Academy, España · 2024 · 360 horas</p>
+          <p data-es="Formación en JavaScript, React, Python, Flask, SQL y APIs REST." data-en="Training included JavaScript, React, Python, Flask, SQL and REST APIs.">Formación en JavaScript, React, Python, Flask, SQL y APIs REST.</p>
+        </div>
+        <div class="experience-item">
+          <h3 data-es="Analista de Sistemas" data-en="Systems Analyst">Analista de Sistemas</h3>
+          <p class="meta">Instituto Superior Nuestra Señora de las Nieves · 2016</p>
+        </div>
+        <p class="block-label" data-es="Certificaciones" data-en="Certifications">Certificaciones</p>
         <div class="tags" role="list">
-          <span class="tag" role="listitem">JavaScript</span>
-          <span class="tag" role="listitem">React</span>
-          <span class="tag" role="listitem">React Native</span>
-          <span class="tag" role="listitem">Tailwind CSS</span>
-          <span class="tag" role="listitem">Bootstrap</span>
-          <span class="tag" role="listitem">Node.js</span>
-          <span class="tag" role="listitem">Express</span>
-          <span class="tag" role="listitem">Python</span>
-          <span class="tag" role="listitem">Django</span>
-          <span class="tag" role="listitem">Flask</span>
-          <span class="tag" role="listitem">PostgreSQL</span>
-          <span class="tag" role="listitem">SQL</span>
-          <span class="tag" role="listitem">Supabase</span>
-          <span class="tag" role="listitem">Stripe</span>
-          <span class="tag" role="listitem">OAuth2</span>
-          <span class="tag" role="listitem">JWT</span>
-          <span class="tag" role="listitem">PHP</span>
-          <span class="tag" role="listitem">Laravel</span>
-          <span class="tag" role="listitem">Java</span>
-          <span class="tag" role="listitem">Docker</span>
-          <span class="tag" role="listitem">Linux</span>
-          <span class="tag" role="listitem">Active Directory</span>
-          <span class="tag" role="listitem">Windows 10</span>
-          <span class="tag" role="listitem">Clonezilla</span>
-          <span class="tag" role="listitem">Azure</span>
+          <span class="tag" role="listitem"><span data-es="PHP y MySQL" data-en="PHP &amp; MySQL">PHP y MySQL</span></span>
+          <span class="tag" role="listitem"><span data-es="Desarrollo colaborativo con Git" data-en="Git Collaborative Development">Desarrollo colaborativo con Git</span></span>
+          <span class="tag" role="listitem">Laravel MVC</span>
+          <span class="tag" role="listitem"><span data-es="Desarrollo de APIs REST" data-en="REST API Development">Desarrollo de APIs REST</span></span>
+          <span class="tag" role="listitem">Oracle SQL</span>
         </div>
       </div>
     </section>
 
-    <section aria-labelledby="education-heading">
-      <h2 id="education-heading" data-es="Educación" data-en="Education"></h2>
+    <section id="idiomas" aria-labelledby="languages-heading">
+      <h2 id="languages-heading" data-es="Idiomas" data-en="Languages">Idiomas</h2>
       <div class="card">
-        <div class="experience-item">
-          <h4 data-es="Desarrollador Full Stack" data-en="Full Stack Developer"></h4>
-          <p class="meta" data-es="2024 - 2024 · 4Geeks Academy, España" data-en="2024 - 2024 · 4Geeks Academy, Spain"></p>
-          <p data-es="Bootcamp intensivo de desarrollo Full Stack con enfoque en tecnologías modernas." data-en="Intensive Full Stack development bootcamp with focus on modern technologies."></p>
-        </div>
-        <div class="experience-item">
-          <h4 data-es="Formación como Analista de Sistemas" data-en="Training for Systems Analyst"></h4>
-          <p class="meta" data-es="2016 · Instituto Superior Nuestra Señora de las Nieves, Buenos Aires, Argentina" data-en="2016 · Instituto Superior Nuestra Señora de las Nieves, Buenos Aires, Argentina"></p>
+        <div class="tags" role="list">
+          <span class="tag" role="listitem"><span data-es="Español — Nativo" data-en="Spanish — Native">Español — Nativo</span></span>
+          <span class="tag" role="listitem"><span data-es="Inglés — B2, competencia profesional" data-en="English — Professional working proficiency (B2)">Inglés — B2, competencia profesional</span></span>
         </div>
       </div>
     </section>
 
-    <section aria-labelledby="languages-heading">
-      <h2 id="languages-heading" data-es="Idiomas" data-en="Languages"></h2>
+    <section id="contacto" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" data-es="Contacto" data-en="Contact">Contacto</h2>
       <div class="card">
-        <div class="tags" role="list">
-          <span class="tag" role="listitem">🇪🇸 <span data-es="Español (Nativo)" data-en="Spanish (Native)"></span></span>
-          <span class="tag" role="listitem">🇬🇧 <span data-es="English (B2 – Professional Working Proficiency)" data-en="English (B2 – Professional Working Proficiency)"></span></span>
+        <p data-es="Resido en Málaga. Estoy disponible de inmediato y abierto a oportunidades híbridas y presenciales." data-en="Based in Málaga, Spain. Available immediately and open to hybrid and on-site opportunities.">Resido en Málaga. Estoy disponible de inmediato y abierto a oportunidades híbridas y presenciales.</p>
+        <div class="contact-info">
+          <span data-es="Málaga, España" data-en="Málaga, Spain">Málaga, España</span>
+          <a href="tel:+34601755438">+34 601 75 54 38</a>
+          <a href="mailto:christiandvillar@gmail.com">christiandvillar@gmail.com</a>
+          <a href="https://www.linkedin.com/in/christian-david-villar-colodro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/ChristianDVillar" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
 
     <footer>
-      <p>© <span id="year"></span> Christian David Villar Colodro · Portfolio</p>
+      <p>© <span id="year"></span> Christian David Villar Colodro</p>
+      <p class="no-print"><a href="index-short.html"><span data-es="Versión resumida" data-en="Short version">Versión resumida</span></a></p>
     </footer>
   </main>
 
