@@ -1,17 +1,25 @@
 # Christian Villar — CV
 
-CV web bilingüe (ES/EN) de especialista en operaciones IT y soporte N1/N2.
+CV web bilingüe (ES/EN) orientado a **IT Support Specialist** para candidaturas en España y Europa, con perfil ATS dedicado y descarga de PDF.
 
 ## Estructura
 
 ```
 christian-villar-cv/
-├── index.html          # CV completo (PDF: 2 hojas A4)
-├── index-short.html    # CV resumido (PDF: 1 hoja A4)
+├── index.html                 # CV visual completo (2 hojas A4)
+├── index-short.html           # CV visual resumido (1 hoja A4)
+├── profiles/
+│   └── it-support.html        # CV ATS IT Support (EN/ES)
 ├── css/styles.css
+├── css/ats.css
 ├── js/script.js
-├── server.py           # servidor local opcional
-└── _source/            # borradores y material de trabajo (no publicado)
+├── assets/favicon.svg
+├── pdf/
+│   ├── cv-completo-*.pdf
+│   ├── cv-resumido-*.pdf
+│   └── it-support/christian-villar-it-support-*.pdf
+├── server.py
+└── _source/                   # borradores locales (no publicados)
 ```
 
 ## Cómo ejecutarlo
@@ -20,38 +28,30 @@ christian-villar-cv/
 python -m http.server 8000
 ```
 
-O bien:
+O `python server.py` → http://localhost:8000
 
-```bash
-python server.py
-```
+- Completo: `/index.html`
+- Resumido: `/index-short.html`
+- ATS IT Support: `/profiles/it-support.html`
+- Idioma: `?lang=en` o `?lang=es`
 
-Abre http://localhost:8000
+## PDF
 
-- Completo: http://localhost:8000/index.html
-- Resumido: http://localhost:8000/index-short.html
-- Inglés forzado: añade `?lang=en` (por ejemplo `index.html?lang=en`)
-- Español forzado: `?lang=es`
+1. Elige ES o EN.
+2. **Descargar PDF** usa el archivo en `pdf/` según idioma.
+3. **Imprimir / PDF** abre el diálogo del navegador (desmarca encabezados y pies).
 
-Si la dirección no lleva `lang`, se usa el idioma guardado en el navegador. Un valor distinto de `es` o `en` (por ejemplo `?lang=fr`) deja la página en español.
+## Estrategia de perfiles
 
-## Imprimir / PDF
-
-1. Elige ES o EN (o abre con `?lang=`).
-2. **Descargar PDF** guarda el archivo ya exportado en `pdf/` según el idioma activo.
-3. **Imprimir / PDF** abre el diálogo del navegador. En Más opciones / More settings, desmarca **Encabezados y pies de página**.
-
-Archivos en `pdf/`:
-
-- `cv-completo-es.pdf` / `cv-completo-en.pdf` (2 hojas A4)
-- `cv-resumido-es.pdf` / `cv-resumido-en.pdf` (1 hoja A4)
-
-El resumido debe caber en **una hoja A4**. El completo, en **dos**.
+| Perfil | Estado | Uso |
+| --- | --- | --- |
+| IT Support (principal) | Publicado | Service Desk, Help Desk, Desktop Support Europa |
+| Technical Support / SaaS | Pendiente | Application / SaaS support |
+| Full Stack Junior | Pendiente | Desarrollo como vía secundaria |
 
 ## Características
 
-- Bilingüe ES/EN, con prioridad de la URL sobre el idioma guardado
-- El enlace entre la versión completa y la resumida conserva el idioma y el resto de parámetros
-- Navegación por secciones
-- Diseño adaptable (móvil sin desplazamiento horizontal)
-- Impresión estilo europeo en blanco
+- Bilingüe ES/EN (URL prioriza sobre localStorage)
+- Open Graph + favicon + schema.org Person
+- Proyectos con aportación personal y estado realista
+- Disponibilidad inmediata y movilidad europea

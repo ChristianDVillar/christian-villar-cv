@@ -47,7 +47,7 @@
 
       // Solo modificar enlaces a las dos páginas del CV.
       const match = href.match(
-        /^((?:\.\/)?index(?:-short)?\.html)(?:\?[^#]*)?(#.*)?$/
+        /^((?:\.\.\/)*(?:\.\/)?index(?:-short)?\.html)(?:\?[^#]*)?(#.*)?$/
       );
 
       if (!match) return;

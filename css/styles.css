@@ -513,6 +513,31 @@ section[id] {
   text-transform: uppercase;
 }
 
+.project-shot {
+  margin: 0.65rem 0 0.35rem;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  background: #020617;
+}
+
+.project-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.project .project-contrib {
+  flex-grow: 0;
+  margin: 0.35rem 0 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .project .project-tech {
   flex-grow: 0;
   margin: 0.15rem 0 0;
@@ -947,6 +972,13 @@ section[id] {
     margin: 0 0 2pt;
     color: #0a2540;
     font-size: 10pt;
+  }
+
+  .project .project-contrib {
+    margin: 1pt 0 0;
+    color: #4b5b72;
+    font-size: 8.5pt;
+    font-style: italic;
   }
 
   .project .project-tech {

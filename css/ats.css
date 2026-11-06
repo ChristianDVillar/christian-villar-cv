@@ -1,0 +1,181 @@
+/* ATS / international print profile — one column, selectable text */
+:root {
+  --ats-text: #1c2430;
+  --ats-muted: #3d4c63;
+  --ats-heading: #0a2540;
+  --ats-accent: #003399;
+  --ats-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.ats-page {
+  margin: 0;
+  font-family: var(--ats-font);
+  color: var(--ats-text);
+  background: #e8eef5;
+  line-height: 1.45;
+}
+
+.ats-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.ats-toolbar a,
+.ats-toolbar button {
+  color: #38bdf8;
+  background: none;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ats-toolbar .lang-toggle button.active {
+  background: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+}
+
+.ats-sheet {
+  max-width: 210mm;
+  margin: 1.25rem auto 2rem;
+  padding: 18mm 16mm;
+  background: #fff;
+  color: var(--ats-text);
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.12);
+}
+
+.ats-sheet h1 {
+  font-size: 1.55rem;
+  color: var(--ats-heading);
+  letter-spacing: -0.02em;
+}
+
+.ats-role {
+  margin-top: 0.25rem;
+  color: var(--ats-accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ats-meta {
+  margin-top: 0.55rem;
+  color: var(--ats-muted);
+  font-size: 0.9rem;
+}
+
+.ats-meta a {
+  color: var(--ats-accent);
+}
+
+.ats-availability {
+  margin-top: 0.45rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ats-heading);
+}
+
+.ats-sheet h2 {
+  margin: 1.1rem 0 0.4rem;
+  padding-bottom: 0.15rem;
+  border-bottom: 1.5px solid var(--ats-accent);
+  color: var(--ats-accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ats-sheet p,
+.ats-sheet li {
+  font-size: 0.92rem;
+}
+
+.ats-sheet ul {
+  margin: 0.25rem 0 0 1.15rem;
+}
+
+.ats-sheet li {
+  margin-bottom: 0.28rem;
+}
+
+.ats-job {
+  margin-top: 0.65rem;
+}
+
+.ats-job h3 {
+  font-size: 1rem;
+  color: var(--ats-heading);
+}
+
+.ats-job .meta {
+  color: var(--ats-muted);
+  font-size: 0.86rem;
+  margin-bottom: 0.25rem;
+}
+
+.ats-skills-block {
+  margin-top: 0.35rem;
+}
+
+.ats-skills-block h3 {
+  font-size: 0.92rem;
+  color: var(--ats-heading);
+  margin-top: 0.45rem;
+}
+
+.ats-note {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  color: var(--ats-muted);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  body.ats-page {
+    background: #fff;
+  }
+
+  .ats-toolbar,
+  .no-print {
+    display: none !important;
+  }
+
+  .ats-sheet {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .ats-sheet h2 {
+    break-after: avoid;
+  }
+
+  .ats-job {
+    break-inside: avoid;
+  }
+}
