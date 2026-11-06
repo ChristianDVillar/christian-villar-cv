@@ -471,6 +471,12 @@ section[id] {
   font-weight: 500;
 }
 
+.availability-closing {
+  margin: 2.5rem 0 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .impact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -758,6 +764,10 @@ section[id] {
     text-transform: uppercase;
   }
 
+  .availability-closing {
+    margin: 8pt 0 0;
+  }
+
   .kicker {
     margin: 0 0 2pt;
     color: #003399;
@@ -968,8 +978,9 @@ section[id] {
     box-shadow: none;
   }
 
-  #contacto .contact-info {
+  .cv-header .contact-info {
     margin-top: 3pt;
+    margin-bottom: 4pt;
   }
 
   #proyectos {
@@ -1010,8 +1021,7 @@ section[id] {
   .cv-short .subtitle,
   .cv-short .intro-text,
   .cv-short .experience-item li,
-  .cv-short #formacion p,
-  .cv-short #contacto p {
+  .cv-short #formacion p {
     font-size: 11pt;
     line-height: 1.4;
   }
@@ -1064,12 +1074,7 @@ section[id] {
     margin-top: 4pt;
   }
 
-  .cv-short #contacto .card {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-
-  .cv-short #contacto .contact-info {
-    margin-top: 2pt;
+  .cv-short .availability-closing {
+    margin-top: 6pt;
   }
 }
