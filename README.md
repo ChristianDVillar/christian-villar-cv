@@ -9,7 +9,8 @@ christian-villar-cv/
 ├── index.html                 # CV visual completo (2 hojas A4)
 ├── index-short.html           # CV visual resumido (1 hoja A4)
 ├── profiles/
-│   └── it-support.html        # CV ATS IT Support (EN/ES)
+│   ├── it-support.html              # CV ATS IT Support (EN/ES)
+│   └── technical-support.html       # CV ATS Technical Support / SaaS (EN/ES)
 ├── css/styles.css
 ├── css/ats.css
 ├── js/script.js
@@ -17,7 +18,8 @@ christian-villar-cv/
 ├── pdf/
 │   ├── cv-completo-*.pdf
 │   ├── cv-resumido-*.pdf
-│   └── it-support/christian-villar-it-support-*.pdf
+│   ├── it-support/christian-villar-it-support-*.pdf
+│   └── technical-support/christian-villar-technical-support-*.pdf
 ├── server.py
 └── _source/                   # borradores locales (no publicados)
 ```
@@ -46,7 +48,7 @@ O `python server.py` → http://localhost:8000
 | Perfil | Estado | Uso |
 | --- | --- | --- |
 | IT Support (principal) | Publicado | Service Desk, Help Desk, Desktop Support Europa |
-| Technical Support / SaaS | Pendiente | Application / SaaS support |
+| Technical Support / SaaS | Publicado | Application Support, SaaS Support, IT Operations |
 | Full Stack Junior | Pendiente | Desarrollo como vía secundaria |
 
 ## Características

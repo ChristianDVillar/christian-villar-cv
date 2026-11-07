@@ -152,11 +152,13 @@ body.ats-page {
 @media print {
   @page {
     size: A4;
-    margin: 12mm 14mm;
+    margin: 10mm 12mm;
   }
 
   body.ats-page {
     background: #fff;
+    font-size: 9.5pt;
+    line-height: 1.32;
   }
 
   .ats-toolbar,
@@ -171,11 +173,46 @@ body.ats-page {
     box-shadow: none;
   }
 
+  .ats-sheet h1 {
+    font-size: 14pt;
+  }
+
+  .ats-role {
+    font-size: 8.5pt;
+  }
+
+  .ats-meta,
+  .ats-availability,
+  .ats-note {
+    font-size: 8pt;
+  }
+
   .ats-sheet h2 {
+    margin: 7pt 0 2pt;
+    font-size: 9pt;
     break-after: avoid;
   }
 
+  .ats-sheet p,
+  .ats-sheet li {
+    font-size: 9pt;
+  }
+
+  .ats-sheet li {
+    margin-bottom: 1.5pt;
+  }
+
   .ats-job {
+    margin-top: 4pt;
     break-inside: avoid;
+  }
+
+  .ats-job h3 {
+    font-size: 9.5pt;
+  }
+
+  .ats-skills-block h3 {
+    margin-top: 3pt;
+    font-size: 9pt;
   }
 }
